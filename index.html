@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="frame">
+        <div>
+            <button id="button">Turn on light</button>
+            <img id="img" src="bulb11.jpg" alt="">
+            <button id="button2">Turn off light</button>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        let button=document.getElementById("button")
+        let img =document.getElementById("img")
+        let button2 =document.getElementById("button2")
+
+        console.log(button);
+        console.log(img);
+        console.log(button2);
+
+    button.addEventListener("click",function(){
+        img.src="bulb22.jpg"
+
+    })
+    
+    button2.addEventListener("click",function(){
+        img.src="bulb11.jpg"
+
+
+    } )
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .frame{
+        background-color:black;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        padding: 12px 25px;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+      
+        
+  
+    }
+    img{
+        width: 280px;
+        height: 400px;
+    }
+</style>
+
